@@ -1,5 +1,4 @@
 import unittest
-
 from textnode import (
     TextNode,
     text_type_bold,
@@ -32,6 +31,14 @@ class TestTextNode(unittest.TestCase):
         node = TextNode("this is a test node", text_type_italic, "https://www.linkedin.com/in/olivialaplaca/")
         self.assertEqual("TextNode(this is a test node, italic, https://www.linkedin.com/in/olivialaplaca/)", repr(node))
         
+
+    # def test_raise_error(self):
+    #     node = TextNode("This node should *raise an error", text_type_text)
+    #     self.assertRaises(ValueError,split_nodes_delimiter([node], "*", text_type_italic))
+        
+        #["this *is* a list", "*of* text nodes"]
+        #bonus case
+        #"**This guy has *nested* text**"
 
 
 if __name__ == "__main__":
