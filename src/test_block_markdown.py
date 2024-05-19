@@ -108,15 +108,6 @@ because all lines
 3. because numbers aren't in order"""
         self.assertEqual(block_to_block_type(block), block_type_paragraph)
 
-#     def test_quote_block_to_html(self):
-#         block = """>this is the first line
-# >of a quote block
-# >about a cool thing"""
-#         self.assertEqual(quote_block_to_html(block), HTMLNode("blockquote", block, [
-
-#         ]))
-
-
     def test_paragraph_block_to_html(self):
         block = "This is a paragraph of text. It has some **bold** and *italic* words inside of it."
         self.assertEqual(
